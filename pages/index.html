@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Кюринская жемчужина - Реабилитационно оздоровительный комплекс
+    </title>
+    <link rel="icon" href="../assets/1б.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <script defer src="../scripts/index.js"></script>
+  </head>
+  <body>
+    <!-- Баннер -->
+    <section class="banner">
+      <div class="banner-content">
+        <h1>Кюринская жемчужина</h1>
+        <p>Реабилитационно оздоровительный комплекс</p>
+      </div>
+    </section>
+
+    <!-- Шапка сайта -->
+    <div class="top-header">
+      <div class="container top-header-content">
+        <img src="../assets/1.svg" alt="logo" class="logo" />
+        <div class="header-right">
+          <div class="social-icons">
+            <a href="https://wa.me/message/ZLY53KIV2L5ZB1" target="_blank">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="tel:+79882256104">
+              <i class="fas fa-phone"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/kyurinskaya_zhemchuzhina?igsh=MWpnNno5aHBmd3dmeA%3D%3D&utm_source=qr"
+              target="_blank"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+          <div class="vision-icon">
+            <i class="fas fa-eye"></i>
+          </div>
+          <button class="header-btn" id="request-btn">Оставить заявку</button>
+          <!-- Бургер-меню добавлено в верхний хедер -->
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <div class="container">
+        <nav>
+          <div class="nav-bubble">
+            <ul class="nav-links">
+              <li><a href="#directions">Направления</a></li>
+              <li><a href="#services">Услуги</a></li>
+              <li><a href="#specialists">Наши специалисты</a></li>
+              <li><a href="#accommodation">Проживание</a></li>
+              <li><a href="#about">О клинике</a></li>
+              <li><a href="#contacts">Контакты</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Модальное окно -->
+    <div class="modal" id="request-modal">
+      <div class="modal-content">
+        <span class="close-modal" id="close-modal">&times;</span>
+        <h2 class="modal-title">Оставить заявку</h2>
+        <form id="request-form">
+          <div class="form-group">
+            <label for="name">Ваше имя</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+          <div class="form-group">
+            <label for="service">Услуга</label>
+            <select id="service" name="service">
+              <option value="">Выберите услугу</option>
+              <option value="orthopedics">Ортопедия и травматология</option>
+              <option value="physiotherapy">Физиотерапия</option>
+              <option value="neurology">Неврология</option>
+            </select>
+          </div>
+          <button type="submit" class="submit-btn">Отправить заявку</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Преимущества -->
+    <section class="advantages">
+      <div class="container">
+        <h2 class="section-title banner-title">Направления</h2>
+        <div class="advantages-grid">
+          <div class="advantage-card">
+            <i class="fas fa-bone"></i>
+            <h3>Ортопедия и травматология</h3>
+            <p>
+              Без операционный метод лечения болезней костно мышечной системы,
+              лечение суставов и позвоночника после травм, Индивидуальные
+              программы с инновационными методами для возврата подвижности
+              суставов.
+            </p>
+          </div>
+          <div class="advantage-card">
+            <i class="fas fa-heartbeat"></i>
+            <h3>Физиотерапия</h3>
+            <p>
+              Современные аппаратные методики для глубокого восстановления,
+              регенерации и активации резервов организма.
+            </p>
+          </div>
+          <div class="advantage-card">
+            <i class="fas fa-brain"></i>
+            <h3>Неврология</h3>
+            <p>
+              Лечение патологий периферической нервной системы. Комплексный
+              подход для снятия боли, восстановления функций и улучшения
+              качества жизни.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Слайдер на весь экран -->
+    <section class="fullscreen-slider">
+      <div class="slider">
+        <div class="slides-container">
+          <div class="slide">
+            <img
+              src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&h=800&q=80"
+              alt="Территория комплекса"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&h=800&q=80"
+              alt="Бассейн"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://images.unsplash.com/photo-1576671414121-aa0c81c830fe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&h=800&q=80"
+              alt="Спа-процедуры"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&h=800&q=80"
+              alt="Тренажерный зал"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://images.unsplash.com/photo-1599458254075-eee55127b267?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&h=800&q=80"
+              alt="Физиотерапия"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&h=800&q=80"
+              alt="Массаж"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://images.unsplash.com/photo-1505576399279-565b52d4ac71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&h=800&q=80"
+              alt="Йога"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&h=800&q=80"
+              alt="Номера"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="slider-controls">
+        <button class="slider-btn prev-btn">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="slider-btn next-btn">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+
+      <div class="slider-dots">
+        <div class="dot active" data-index="0"></div>
+        <div class="dot" data-index="1"></div>
+        <div class="dot" data-index="2"></div>
+        <div class="dot" data-index="3"></div>
+        <div class="dot" data-index="4"></div>
+        <div class="dot" data-index="5"></div>
+        <div class="dot" data-index="6"></div>
+        <div class="dot" data-index="7"></div>
+      </div>
+
+      <div class="slider-action">
+        <button class="action-btn" id="slider-request-btn">
+          Оставить заявку
+        </button>
+      </div>
+    </section>
+
+    <!-- Специалисты -->
+    <section class="specialists" id="specialists">
+      <div class="container">
+        <h2 class="section-title">Ключевые специалисты</h2>
+        <div class="specialists-grid">
+          <div class="specialist-card">
+            <div class="specialist-img">
+              <img src="../assets/1.jpg" alt="Альдеров Альдер Сиражадинович" />
+            </div>
+            <div class="specialist-info">
+              <h3>Альдеров Альдер Сиражадинович</h3>
+              <p class="specialty">Врач Ортопед - травмотолог</p>
+              <p class="experience">Опыт работы более 30 лет</p>
+              <p>Врач высшей категории</p>
+              <a href="#" class="more-link">Подробнее →</a>
+            </div>
+          </div>
+          <div class="specialist-card">
+            <div class="specialist-img">
+              <img src="../assets/2.jpg" alt="Саидов Аслан Саидович" />
+            </div>
+            <div class="specialist-info">
+              <h3>Саидов Аслан Саидович</h3>
+              <p class="specialty">Врач терапевт</p>
+              <p class="experience">Опыт работы более 30 лет</p>
+              <p>Врач высшей категории</p>
+              <a href="#" class="more-link">Подробнее →</a>
+            </div>
+          </div>
+          <div class="specialist-card">
+            <div class="specialist-img">
+              <img src="../assets/3.jpg" alt="Раджабов Ислам Магомедович" />
+            </div>
+            <div class="specialist-info">
+              <h3>Раджабов Ислам Магомедович</h3>
+              <p class="specialty">Сосудистый хирург (ангиохирург)</p>
+              <p class="experience">Опыт работы более 8 лет</p>
+              <p>Врач высшей категории</p>
+              <a href="#" class="more-link">Подробнее →</a>
+            </div>
+          </div>
+          <div class="specialist-card">
+            <div class="specialist-img">
+              <img src="../assets/4.jpg" alt="Устаев Джабраил Юнусович" />
+            </div>
+            <div class="specialist-info">
+              <h3>Устаев Джабраил Юнусович</h3>
+              <p class="specialty">Врач невролог</p>
+              <p class="experience">Опыт работы более 6 лет</p>
+              <p>Врач высшей категории</p>
+              <a href="#" class="more-link">Подробнее →</a>
+            </div>
+          </div>
+          <div class="specialist-card">
+            <div class="specialist-img">
+              <img src="../assets/5.jpg" alt="Шайдаев Эльбрус Замирович" />
+            </div>
+            <div class="specialist-info">
+              <h3>Шайдаев Эльбрус Замирович</h3>
+              <p class="specialty">Врач травматолог - ортопед (оперирующий)</p>
+              <p class="experience">Опыт работы более 19 лет</p>
+              <p>Врач высшей категории, кандидат медицинских наук</p>
+              <a href="#" class="more-link">Подробнее →</a>
+            </div>
+          </div>
+          <div class="specialist-card">
+            <div class="specialist-img">
+              <img src="../assets/6.jpg" alt="Шайдаев Эльбрус Замирович" />
+            </div>
+            <div class="specialist-info">
+              <h3>Шайдаев Эльбрус Замирович</h3>
+              <p class="specialty">Врач травматолог - ортопед (оперирующий)</p>
+              <p class="experience">Опыт работы более 19 лет</p>
+              <p>Врач высшей категории, кандидат медицинских наук</p>
+              <a href="#" class="more-link">Подробнее →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Блок Новости -->
+    <section class="news">
+      <div class="container">
+        <h2 class="section-title">Новости</h2>
+        <div class="news-grid">
+          <div class="news-card">
+            <div class="news-img">
+              <img
+                src="https://placehold.co/400x200/2c7da0/white?text=Новость+1"
+                alt="Новость 1"
+              />
+            </div>
+            <div class="news-info">
+              <div class="news-date">15 сентября 2023</div>
+              <h3 class="news-title">Открытие нового корпуса</h3>
+              <p>
+                Мы рады сообщить об открытии нового современного корпуса нашего
+                реабилитационного центра, оснащенного самым современным
+                оборудованием.
+              </p>
+            </div>
+          </div>
+          <div class="news-card">
+            <div class="news-img">
+              <img
+                src="https://placehold.co/400x200/2c7da0/white?text=Новость+2"
+                alt="Новость 2"
+              />
+            </div>
+            <div class="news-info">
+              <div class="news-date">10 августа 2023</div>
+              <h3 class="news-title">Новая методика лечения</h3>
+              <p>
+                В нашем центре внедрена инновационная методика лечения
+                заболеваний опорно-двигательного аппарата, показавшая высокую
+                эффективность.
+              </p>
+            </div>
+          </div>
+          <div class="news-card">
+            <div class="news-img">
+              <img
+                src="https://placehold.co/400x200/2c7da0/white?text=Новость+3"
+                alt="Новость 3"
+              />
+            </div>
+            <div class="news-info">
+              <div class="news-date">25 июля 2023</div>
+              <h3 class="news-title">Семинар для специалистов</h3>
+              <p>
+                Приглашаем врачей и специалистов реабилитационной медицины на
+                семинар, который пройдет в нашем центре в следующем месяце.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Блок Отзывы -->
+    <section class="reviews">
+      <div class="container">
+        <h2 class="section-title">Отзывы наших пациентов</h2>
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="review-header">
+              <div class="review-avatar">
+                <i class="fas fa-user"></i>
+              </div>
+              <div>
+                <div class="review-name">Марина Иванова</div>
+                <div class="review-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p>
+              Проходила реабилитацию после травмы колена. Очень благодарна
+              врачам и персоналу за профессиональный подход и внимательное
+              отношение. Состояние значительно улучшилось, вернулась к активной
+              жизни.
+            </p>
+          </div>
+          <div class="review-card">
+            <div class="review-header">
+              <div class="review-avatar">
+                <i class="fas fa-user"></i>
+              </div>
+              <div>
+                <div class="review-name">Сергей Петров</div>
+                <div class="review-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p>
+              Лечил спину в этом центре. После курса процедур боли полностью
+              прошли. Особенно хочу отметить индивидуальный подход и современное
+              оборудование. Очень доволен результатом!
+            </p>
+          </div>
+          <div class="review-card">
+            <div class="review-header">
+              <div class="review-avatar">
+                <i class="fas fa-user"></i>
+              </div>
+              <div>
+                <div class="review-name">Ольга Сидорова</div>
+                <div class="review-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p>
+              Привозила сюда маму после инсульта. За месяц занятий с
+              специалистами появились значительные улучvements. Персонал очень
+              внимательный и квалифицированный. Спасибо за вашу работу!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-map">
+            <img
+              src="https://placehold.co/600x300/2c3e50/white?text=Карта+расположения"
+              alt="Карта расположения"
+            />
+          </div>
+          <div class="footer-contacts">
+            <h3>Контакты</h3>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <a href="tel:+79882256104">+7 988 225-61-04</a>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:kyurinskaya.zhemchuzhina@mail.ru"
+                >kyurinskaya.zhemchuzhina@mail.ru</a
+              >
+            </div>
+            <div class="footer-social">
+              <a href="https://wa.me/message/ZLY53KIV2L5ZB1" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/kyurinskaya_zhemchuzhina?igsh=MWpnNno5aHBmd3dmeA%3D%3D&utm_source=qr"
+                target="_blank"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="sitemap">
+          <div class="sitemap-column">
+            <h3>Услуги</h3>
+            <ul class="sitemap-links">
+              <li><a href="#">Ортопедия и травматология</a></li>
+              <li><a href="#">Физиотерапия</a></li>
+              <li><a href="#">Неврология</a></li>
+              <li><a href="#">Реабилитация после операций</a></li>
+            </ul>
+          </div>
+          <div class="sitemap-column">
+            <h3>О нас</h3>
+            <ul class="sitemap-links">
+              <li><a href="#">Специалисты</a></li>
+              <li><a href="#">Отзывы</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
