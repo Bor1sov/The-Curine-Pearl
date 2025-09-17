@@ -6,7 +6,7 @@
     <title>
       Кюринская жемчужина - Реабилитационно оздоровительный комплекс
     </title>
-    <link rel="icon" href="../assets/1б.svg" type="image/x-icon">
+    <link rel="icon" href="../assets/1б.svg" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,7 +21,6 @@
     <script defer src="../scripts/index.js"></script>
   </head>
   <body>
-    <!-- Баннер -->
     <section class="banner">
       <div class="banner-content">
         <h1>Кюринская жемчужина</h1>
@@ -29,7 +28,6 @@
       </div>
     </section>
 
-    <!-- Шапка сайта -->
     <div class="top-header">
       <div class="container top-header-content">
         <img src="../assets/1.svg" alt="logo" class="logo" />
@@ -52,7 +50,6 @@
             <i class="fas fa-eye"></i>
           </div>
           <button class="header-btn" id="request-btn">Оставить заявку</button>
-          <!-- Бургер-меню добавлено в верхний хедер -->
           <div class="burger">
             <div class="line1"></div>
             <div class="line2"></div>
@@ -79,7 +76,50 @@
       </div>
     </header>
 
-    <!-- Модальное окно -->
+    <div class="room-search">
+      <form class="search-form">
+        <div class="search-group">
+          <label for="check-in">Заезд:</label>
+          <input
+            type="date"
+            id="check-in"
+            name="check-in"
+            class="input-banner"
+            required
+          />
+        </div>
+        <div class="search-group">
+          <label for="check-out">Выезд:</label>
+          <input
+            type="date"
+            id="check-out"
+            name="check-out"
+            class="input-banner"
+            required
+          />
+        </div>
+        <div class="search-group">
+          <label for="adults">Взрослых:</label>
+          <select id="adults" name="adults" class="input-banner">
+            <option value="1">1</option>
+            <option value="2" selected>2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
+        <div class="search-group">
+          <label for="children">Детей:</label>
+          <select id="children" name="children" class="input-banner">
+            <option value="0" selected>0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
+        <button type="submit" class="search-btn">Найти номер</button>
+      </form>
+    </div>
+
     <div class="modal" id="request-modal">
       <div class="modal-content">
         <span class="close-modal" id="close-modal">&times;</span>
@@ -107,7 +147,6 @@
       </div>
     </div>
 
-    <!-- Преимущества -->
     <section class="advantages">
       <div class="container">
         <h2 class="section-title banner-title">Направления</h2>
@@ -143,7 +182,6 @@
       </div>
     </section>
 
-    <!-- Слайдер на весь экран -->
     <section class="fullscreen-slider">
       <div class="slider">
         <div class="slides-container">
@@ -225,7 +263,6 @@
       </div>
     </section>
 
-    <!-- Специалисты -->
     <section class="specialists" id="specialists">
       <div class="container">
         <h2 class="section-title">Ключевые специалисты</h2>
@@ -306,7 +343,34 @@
       </div>
     </section>
 
-    <!-- Блок Новости -->
+    <section class="indications">
+      <div class="container">
+        <h2 class="section-title">
+          Показания для санаторно-курортного лечения
+        </h2>
+        <div class="indications-grid">
+          <div class="indication-item">
+            Заболевания сердечно-сосудистой системы
+          </div>
+          <div class="indication-item">Заболевания органов дыхания</div>
+          <div class="indication-item">Заболевания органов пищеварения</div>
+          <div class="indication-item">
+            Заболевания опорно-двигательного аппарата
+          </div>
+          <div class="indication-item">Заболевания нервной системы</div>
+          <div class="indication-item">Сахарный диабет</div>
+          <div class="indication-item">Заболевания мочеполовой системы</div>
+          <div class="indication-item">Ишемическая болезнь сердца</div>
+          <div class="indication-item">Артериальная гипертония</div>
+          <div class="indication-item">Болезни мужских половых органов</div>
+          <div class="indication-item">Болезни женских тазовых органов</div>
+          <div class="indication-item">
+            Поражение периферической нервной системы
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="news">
       <div class="container">
         <h2 class="section-title">Новости</h2>
@@ -365,7 +429,6 @@
       </div>
     </section>
 
-    <!-- Блок Отзывы -->
     <section class="reviews">
       <div class="container">
         <h2 class="section-title">Отзывы наших пациентов</h2>
@@ -441,15 +504,38 @@
       </div>
     </section>
 
-    <!-- Подвал -->
     <footer>
       <div class="container">
         <div class="footer-content">
           <div class="footer-map">
-            <img
-              src="https://placehold.co/600x300/2c3e50/white?text=Карта+расположения"
-              alt="Карта расположения"
-            />
+            <div style="position: relative; overflow: hidden">
+              <a
+                href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps"
+                style="
+                  color: #eee;
+                  font-size: 12px;
+                  position: absolute;
+                  top: 0px;
+                "
+                >Яндекс Карты</a
+              ><a
+                href="https://yandex.ru/maps/11010/republic-of-dagestan/house/parkovaya_ulitsa_38/YEEYdwBjQUUGQFprfXp4cX5rZg==/?ll=48.173801%2C41.690282&utm_medium=mapframe&utm_source=maps&z=16.81"
+                style="
+                  color: #eee;
+                  font-size: 12px;
+                  position: absolute;
+                  top: 14px;
+                "
+                >Парковая улица, 38 — Яндекс Карты</a
+              ><iframe
+                src="https://yandex.ru/map-widget/v1/?ll=48.173801%2C41.690282&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgo1NzM1OTczMjE3EqAB0KDQvtGB0YHQuNGPLCDQoNC10YHQv9GD0LHQu9C40LrQsCDQlNCw0LPQtdGB0YLQsNC9LCDQodGD0LvQtdC50LzQsNC9LdCh0YLQsNC70YzRgdC60LjQuSDRgNCw0LnQvtC9LCDRgdC10LvQviDQntGA0YLQsC3QodGC0LDQuywg0J_QsNGA0LrQvtCy0LDRjyDRg9C70LjRhtCwLCAzOCIKDfmxQEIV2MImQg%2C%2C&z=16.81"
+                width="560"
+                height="400"
+                frameborder="1"
+                allowfullscreen="true"
+                style="position: relative"
+              ></iframe>
+            </div>
           </div>
           <div class="footer-contacts">
             <h3>Контакты</h3>

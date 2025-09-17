@@ -1,11 +1,256 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Направления</title>
+    <link rel="icon" href="../assets/1б.svg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../styles/directions.css" />
+    <script defer src="../scripts/directions.js"></script>
+  </head>
+  <body>
+    <div class="top-header">
+      <div class="container top-header-content">
+        <img src="../assets/1.svg" alt="logo" class="logo" />
+        <div class="header-right">
+          <div class="social-icons">
+            <a href="https://wa.me/message/ZLY53KIV2L5ZB1" target="_blank">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="tel:+79882256104">
+              <i class="fas fa-phone"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/kyurinskaya_zhemchuzhina?igsh=MWpnNno5aHBmd3dmeA%3D%3D&utm_source=qr"
+              target="_blank"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+          <div class="vision-icon">
+            <i class="fas fa-eye"></i>
+          </div>
+          <button class="header-btn" id="request-btn">Оставить заявку</button>
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <div class="container">
+        <nav>
+          <div class="nav-bubble">
+            <ul class="nav-links">
+              <li><a href="#directions">Направления</a></li>
+              <li><a href="#services">Услуги</a></li>
+              <li><a href="#specialists">Наши специалисты</a></li>
+              <li><a href="#accommodation">Проживание</a></li>
+              <li><a href="#about">О клинике</a></li>
+              <li><a href="#contacts">Контакты</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="modal" id="request-modal">
+      <div class="modal-content">
+        <span class="close-modal" id="close-modal">&times;</span>
+        <h2 class="modal-title">Оставить заявку</h2>
+        <form id="request-form">
+          <div class="form-group">
+            <label for="name">Ваше имя</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+          <div class="form-group">
+            <label for="service">Услуга</label>
+            <select id="service" name="service">
+              <option value="">Выберите услугу</option>
+              <option value="orthopedics">Ортопедия и травматология</option>
+              <option value="physiotherapy">Физиотерапия</option>
+              <option value="neurology">Неврология</option>
+            </select>
+          </div>
+          <button type="submit" class="submit-btn">Отправить заявку</button>
+        </form>
+      </div>
+    </div>
+
+    <section class="directions-content" id="directions">
+      <div class="container">
+        <div class="directions-header">
+          <h2>Направления</h2>
+        </div>
+
+        <div class="direction-section">
+          <img
+            src="../assets/ortho3.jpg"
+            alt="Ортопедия и травматология"
+            class="direction-image"
+          />
+          <div class="direction-section-content">
+            <h3 class="direction-title">Ортопедия и травматология</h3>
+            <p class="direction-text">
+              Лишь активно развивающиеся страны третьего мира лишь добавляют
+              фракийозных разногласий и революционных. Реальные образцы,
+              сложившиеся структуры организаций требует определения уточнения
+              приспособления рассуждения. Имеется условия точка зрения, гласный
+              пример с следующей подругинизацией в сети интернет формирует
+              глобальную экономическую сеть и при этом – заблокирована в рамках
+              своих собственных разногласий их ограничений. Для современного
+              мира намерение современных методик в значительной степени
+              обусловливает важность существующих финансовых и административных
+              условий.
+            </p>
+          </div>
+        </div>
+
+        <div class="direction-section">
+          <img
+            src="../assets/3iStock-1181399378.jpg"
+            alt="Физиотерапия"
+            class="direction-image"
+          />
+          <div class="direction-section-content">
+            <h3 class="direction-title">Физиотерапия</h3>
+            <p class="direction-text">
+              Лишь активно развивающиеся страны третьего мира лишь добавляют
+              фракийозных разногласий и революционных. Реальные образцы,
+              сложившиеся структуры организаций требует определения уточнения
+              приспособления рассуждения. Имеется условия точка зрения, гласный
+              пример с следующей подругинизацией в сети интернет формирует
+              глобальную экономическую сеть и при этом – заблокирована в рамках
+              своих собственных разногласий их ограничений. Для современного
+              мира намерение современных методик в значительной степени
+              обусловливает важность существующих финансовых и административных
+              условий.
+            </p>
+          </div>
+        </div>
+
+        <div class="direction-section">
+          <img
+            src="../assets/761_n2217054_big.jpg"
+            alt="Неврология"
+            class="direction-image"
+          />
+          <div class="direction-section-content">
+            <h3 class="direction-title">Неврология</h3>
+            <p class="direction-text">
+              Лишь активно развивающиеся страны третьего мира лишь добавляют
+              фракийозных разногласий и революционных. Реальные образцы,
+              сложившиеся структуры организаций требует определения уточнения
+              приспособления рассуждения. Имеется условия точка зрения, гласный
+              пример с следующей подругинизацией в сети интернет формирует
+              глобальную экономическую сеть и при этом – заблокирована в рамках
+              своих собственных разногласий их ограничений. Для современного
+              мира намерение современных методик в значительной степени
+              обусловливает важность существующих финансовых и административных
+              условий.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-map">
+            <div style="position: relative; overflow: hidden">
+              <a
+                href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps"
+                style="
+                  color: #eee;
+                  font-size: 12px;
+                  position: absolute;
+                  top: 0px;
+                "
+                >Яндекс Карты</a
+              ><a
+                href="https://yandex.ru/maps/11010/republic-of-dagestan/house/parkovaya_ulitsa_38/YEEYdwBjQUUGQFprfXp4cX5rZg==/?ll=48.173801%2C41.690282&utm_medium=mapframe&utm_source=maps&z=16.81"
+                style="
+                  color: #eee;
+                  font-size: 12px;
+                  position: absolute;
+                  top: 14px;
+                "
+                >Парковая улица, 38 — Яндекс Карты</a
+              ><iframe
+                src="https://yandex.ru/map-widget/v1/?ll=48.173801%2C41.690282&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgo1NzM1OTczMjE3EqAB0KDQvtGB0YHQuNGPLCDQoNC10YHQv9GD0LHQu9C40LrQsCDQlNCw0LPQtdGB0YLQsNC9LCDCq9Ck0LjQu9GM0LHRg9C60L7QstCw0L3QuNGPINCX0LXQu9C10L3RjNC60L7Qs9C+INGB0L7RhdGA0L7QutC4INCT0YDQtdC30LTRg9C10YLRjNGB0LrQuNC5INGA0LDQudC+0L0sINCT0YDQtdC30LTRg9C10YIg0J_QvtC00L3QvtC80LDQudGC0LAsIDM4Ig3QpLdCFY7CJkI%2C%2C&z=16.81"
+                width="560"
+                height="400"
+                frameborder="1"
+                allowfullscreen="true"
+                style="position: relative"
+              ></iframe>
+            </div>
+          </div>
+          <div class="footer-contacts">
+            <h3>Контакты</h3>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <a href="tel:+79882256104">+7 988 225-61-04</a>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:kyurinskaya.zhemchuzhina@mail.ru"
+                >kyurinskaya.zhemchuzhina@mail.ru</a
+              >
+            </div>
+            <div class="footer-social">
+              <a href="https://wa.me/message/ZLY53KIV2L5ZB1" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/kyurinskaya_zhemchuzhina?igsh=MWpnNno5aHBmd3dmeA%3D%3D&utm_source=qr"
+                target="_blank"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="sitemap">
+          <div class="sitemap-column">
+            <h3>Услуги</h3>
+            <ul class="sitemap-links">
+              <li><a href="#">Ортопедия и травматология</a></li>
+              <li><a href="#">Физиотерапия</a></li>
+              <li><a href="#">Неврология</a></li>
+              <li><a href="#">Реабилитация после операций</a></li>
+            </ul>
+          </div>
+          <div class="sitemap-column">
+            <h3>О нас</h3>
+            <ul class="sitemap-links">
+              <li><a href="#">Специалисты</a></li>
+              <li><a href="#">Отзывы</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
