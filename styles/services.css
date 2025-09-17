@@ -482,10 +482,6 @@ footer {
 
 
 
-
-
-
-/* Аккордеон */
 .services-accordion {
 padding: 40px 0;
 }
@@ -597,7 +593,6 @@ margin-top: 15px;
 background-color: #1e3c72;
 }
 
-/* Модальное окно */
 .modal {
 display: none;
 position: fixed;
