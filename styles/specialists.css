@@ -655,7 +655,7 @@ footer {
 
 
 
-/* Анимация появления карточек */
+
 @keyframes cardAppear {
   from {
     opacity: 0;

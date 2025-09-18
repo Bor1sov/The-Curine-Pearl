@@ -1,11 +1,347 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Проживание</title>
+    <link rel="icon" href="../assets/1б.svg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/habitation.css" />
+    <script defer src="../scripts/nocangescript.js"></script>
+
+  </head>
+  <body>
+    <div class="top-header">
+      <div class="container top-header-content">
+        <img src="../assets/1.svg" alt="logo" class="logo" />
+        <div class="header-right">
+          <div class="social-icons">
+            <a href="https://wa.me/message/ZLY53KIV2L5ZB1" target="_blank">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="tel:+79882256104">
+              <i class="fas fa-phone"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/kyurinskaya_zhemchuzhina?igsh=MWpnNno5aHBmd3dmeA%3D%3D&utm_source=qr"
+              target="_blank"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+          <div class="vision-icon">
+            <i class="fas fa-eye"></i>
+          </div>
+          <button class="header-btn" id="request-btn">Оставить заявку</button>
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <div class="container">
+        <nav>
+          <div class="nav-bubble">
+            <ul class="nav-links">
+              <li><a href="#directions">Направления</a></li>
+              <li><a href="#services">Услуги</a></li>
+              <li><a href="#specialists">Наши специалисты</a></li>
+              <li><a href="#accommodation">Проживание</a></li>
+              <li><a href="#about">О клинике</a></li>
+              <li><a href="#contacts">Контакты</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="modal" id="request-modal">
+      <div class="modal-content">
+        <span class="close-modal" id="close-modal">&times;</span>
+        <h2 class="modal-title">Оставить заявку</h2>
+        <form id="request-form">
+          <div class="form-group">
+            <label for="name">Ваше имя</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+          <div class="form-group">
+            <label for="service">Услуга</label>
+            <select id="service" name="service">
+              <option value="">Выберите услугу</option>
+              <option value="orthopedics">Ортопедия и травматология</option>
+              <option value="physiotherapy">Физиотерапия</option>
+              <option value="neurology">Неврология</option>
+            </select>
+          </div>
+          <button type="submit" class="submit-btn">Отправить заявку</button>
+        </form>
+      </div>
+    </div>
+  
+    <section class="accommodation-content">
+      <div class="container">
+        <div class="accommodation-header">
+          <h2>Проживание</h2>
+        </div>
+        <p class="accommodation-description">
+          Мы предлагаем комфортабельные номера различных категорий, оборудованные всем необходимым для приятного отдыха и восстановления. Каждый номер сочетает в себе уют домашней атмосферы и функциональность современного дизайна.
+        </p>
+
+        <div class="room-types">
+          <!-- Стандартный номер -->
+          <div class="room-card">
+            <div class="room-image">
+              <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Стандартный номер">
+            </div>
+            <div class="room-info">
+              <h3 class="room-title">Стандартный номер</h3>
+              <ul class="room-features">
+                <li><i class="fas fa-bed"></i> Одноместное или двухместное размещение</li>
+                <li><i class="fas fa-shower"></i> Совмещенный санузел с душем</li>
+                <li><i class="fas fa-tv"></i> Телевизор с кабельным TV</li>
+                <li><i class="fas fa-wifi"></i> Бесплатный Wi-Fi</li>
+                <li><i class="fas fa-snowflake"></i> Кондиционер</li>
+              </ul>
+              <div class="room-packages">
+                <h4>Пакеты проживания:</h4>
+                <div class="package-item">
+                  <span>Краткосрочный (1-7 дней)</span>
+                  <span>от 2 500 ₽/сутки</span>
+                </div>
+                <div class="package-item">
+                  <span>Среднесрочный (8-14 дней)</span>
+                  <span>от 2 200 ₽/сутки</span>
+                </div>
+                <div class="package-item">
+                  <span>Долгосрочный (15+ дней)</span>
+                  <span>от 1 900 ₽/сутки</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Комфорт номер -->
+          <div class="room-card">
+            <div class="room-image">
+              <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Номер Комфорт">
+            </div>
+            <div class="room-info">
+              <h3 class="room-title">Номер "Комфорт"</h3>
+              <ul class="room-features">
+                <li><i class="fas fa-bed"></i> Увеличенная кровать King Size</li>
+                <li><i class="fas fa-bath"></i> Отдельная ванная комната</li>
+                <li><i class="fas fa-utensils"></i> Мини-кухня с оборудованием</li>
+                <li><i class="fas fa-couch"></i> Зона для отдыха с диваном</li>
+                <li><i class="fas fa-tshirt"></i> Халаты и тапочки</li>
+              </ul>
+              <div class="room-packages">
+                <h4>Пакеты проживания:</h4>
+                <div class="package-item">
+                  <span>Краткосрочный (1-7 дней)</span>
+                  <span>от 3 800 ₽/сутки</span>
+                </div>
+                <div class="package-item">
+                  <span>Среднесрочный (8-14 дней)</span>
+                  <span>от 3 400 ₽/сутки</span>
+                </div>
+                <div class="package-item">
+                  <span>Долгосрочный (15+ дней)</span>
+                  <span>от 3 000 ₽/сутки</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Люкс номер -->
+          <div class="room-card">
+            <div class="room-image">
+              <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Люкс номер">
+            </div>
+            <div class="room-info">
+              <h3 class="room-title">Номер "Люкс"</h3>
+              <ul class="room-features">
+                <li><i class="fas fa-door-open"></i> Двухкомнатный номер</li>
+                <li><i class="fas fa-jacuzzi"></i> Гидромассажная ванна</li>
+                <li><i class="fas fa-coffee"></i> Кофемашина и мини-бар</li>
+                <li><i class="fas fa-desktop"></i> Рабочая зона с оргтехникой</li>
+                <li><i class="fas fa-concierge-bell"></i> Персональный консьерж</li>
+              </ul>
+              <div class="room-packages">
+                <h4>Пакеты проживания:</h4>
+                <div class="package-item">
+                  <span>Краткосрочный (1-7 дней)</span>
+                  <span>от 5 500 ₽/сутки</span>
+                </div>
+                <div class="package-item">
+                  <span>Среднесрочный (8-14 дней)</span>
+                  <span>от 5 000 ₽/сутки</span>
+                </div>
+                <div class="package-item">
+                  <span>Долгосрочный (15+ дней)</span>
+                  <span>от 4 500 ₽/сутки</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="comparison-section">
+          <div class="container">
+            <h3 style="text-align: center; margin-bottom: 30px; color: #2c7da0;">Сравнение категорий номеров</h3>
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>Услуги и удобства</th>
+                  <th>Стандарт</th>
+                  <th>Комфорт</th>
+                  <th>Люкс</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Площадь номера</td>
+                  <td>20 м²</td>
+                  <td>30 м²</td>
+                  <td>45 м²</td>
+                </tr>
+                <tr>
+                  <td>Ежедневная уборка</td>
+                  <td class="feature-present">✓</td>
+                  <td class="feature-present">✓</td>
+                  <td class="feature-present">✓</td>
+                </tr>
+                <tr>
+                  <td>Смена белья</td>
+                  <td>2 раза в неделю</td>
+                  <td>3 раза в неделю</td>
+                  <td>Ежедневно</td>
+                </tr>
+                <tr>
+                  <td>Завтрак включен</td>
+                  <td class="feature-absent">✗</td>
+                  <td class="feature-present">✓</td>
+                  <td class="feature-present">✓</td>
+                </tr>
+                <tr>
+                  <td>Мини-кухня</td>
+                  <td class="feature-absent">✗</td>
+                  <td class="feature-present">✓</td>
+                  <td class="feature-present">✓</td>
+                </tr>
+                <tr>
+                  <td>Гидромассажная ванна</td>
+                  <td class="feature-absent">✗</td>
+                  <td class="feature-absent">✗</td>
+                  <td class="feature-present">✓</td>
+                </tr>
+                <tr>
+                  <td>Персональный консьерж</td>
+                  <td class="feature-absent">✗</td>
+                  <td class="feature-absent">✗</td>
+                  <td class="feature-present">✓</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-map">
+            <div style="position: relative; overflow: hidden">
+              <a
+                href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps"
+                style="
+                  color: #eee;
+                  font-size: 12px;
+                  position: absolute;
+                  top: 0px;
+                "
+                >Яндекс Карты</a
+              ><a
+                href="https://yandex.ru/maps/11010/republic-of-dagestan/house/parkovaya_ulitsa_38/YEEYdwBjQUUGQFprfXp4cX5rZg==/?ll=48.173801%2C41.690282&utm_medium=mapframe&utm_source=maps&z=16.81"
+                style="
+                  color: #eee;
+                  font-size: 12px;
+                  position: absolute;
+                  top: 14px;
+                "
+                >Парковая улица, 38 — Яндекс Карты</a
+              ><iframe
+                src="https://yandex.ru/map-widget/v1/?ll=48.173801%2C41.690282&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgo1NzM1OTczMjE3EqAB0KDQvtGB0YHQuNGPLCDQoNC10YHQv9GD0LHQu9C40LrQsCDQlNCw0LPQtdGB0YLQsNC9LCDCq9Ck0LjQu9GM0LHRg9C60L7QstCw0L3QuNGPINCX0LXQu9C10L3RjNC60L7Qs9C+INGB0L7RhdGA0L7QutC4INCT0YDQtdC30LTRg9C10YLRjNGB0LrQuNC5INGA0LDQudC+0L0sINCT0YDQtdC30LTRg9C10YIg0J_QvtC00L3QvtC80LDQudGC0LAsIDM4Ig3QpLdCFY7CJkI%2C%2C&z=16.81"
+                width="560"
+                height="400"
+                frameborder="1"
+                allowfullscreen="true"
+                style="position: relative"
+              ></iframe>
+            </div>
+          </div>
+          <div class="footer-contacts">
+            <h3>Контакты</h3>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <a href="tel:+79882256104">+7 988 225-61-04</a>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:kyurinskaya.zhemchuzhina@mail.ru"
+                >kyurinskaya.zhemchuzhina@mail.ru</a
+              >
+            </div>
+            <div class="footer-social">
+              <a href="https://wa.me/message/ZLY53KIV2L5ZB1" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/kyurinskaya_zhemchuzhina?igsh=MWpnNno5aHBmd3dmeA%3D%3D&utm_source=qr"
+                target="_blank"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="sitemap">
+          <div class="sitemap-column">
+            <h3>Услуги</h3>
+            <ul class="sitemap-links">
+              <li><a href="#">Ортопедия и травматология</a></li>
+              <li><a href="#">Физиотерапия</a></li>
+              <li><a href="#">Неврология</a></li>
+              <li><a href="#">Реабилитация после операций</a></li>
+            </ul>
+          </div>
+          <div class="sitemap-column">
+            <h3>О нас</h3>
+            <ul class="sitemap-links">
+              <li><a href="#">Специалисты</a></li>
+              <li><a href="#">Отзывы</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
