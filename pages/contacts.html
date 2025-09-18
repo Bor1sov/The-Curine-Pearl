@@ -1,11 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контакты</title>
+    <link rel="icon" href="../assets/1б.svg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/contacts.css" />
+    <script defer src="../scripts/nocangescript.js"></script>
+  </head>
+  <body>
+    <div class="top-header">
+      <div class="container top-header-content">
+        <img src="../assets/1.svg" alt="logo" class="logo" />
+        <div class="header-right">
+          <div class="social-icons">
+            <a href="https://wa.me/message/ZLY53KIV2L5ZB1" target="_blank">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="tel:+79882256104">
+              <i class="fas fa-phone"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/kyurinskaya_zhemchuzhina?igsh=MWpnNno5aHBmd3dmeA%3D%3D&utm_source=qr"
+              target="_blank"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+          <div class="vision-icon">
+            <i class="fas fa-eye"></i>
+          </div>
+          <button class="header-btn" id="request-btn">Оставить заявку</button>
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <div class="container">
+        <nav>
+          <div class="nav-bubble">
+            <ul class="nav-links">
+              <li><a href="#directions">Направления</a></li>
+              <li><a href="#services">Услуги</a></li>
+              <li><a href="#specialists">Наши специалисты</a></li>
+              <li><a href="#accommodation">Проживание</a></li>
+              <li><a href="#about">О клинике</a></li>
+              <li><a href="#contacts">Контакты</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="modal" id="request-modal">
+      <div class="modal-content">
+        <span class="close-modal" id="close-modal">&times;</span>
+        <h2 class="modal-title">Оставить заявку</h2>
+        <form id="request-form">
+          <div class="form-group">
+            <label for="name">Ваше имя</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+          <div class="form-group">
+            <label for="service">Услуга</label>
+            <select id="service" name="service">
+              <option value="">Выберите услугу</option>
+              <option value="orthopedics">Ортопедия и травматология</option>
+              <option value="physiotherapy">Физиотерапия</option>
+              <option value="neurology">Неврология</option>
+            </select>
+          </div>
+          <button type="submit" class="submit-btn">Отправить заявку</button>
+        </form>
+      </div>
+    </div>
+  
+    <section class="contacts-content">
+      <div class="container">
+        <div class="contacts-header">
+          <h2>Контакты</h2>
+        </div>
+        
+        <div class="contacts-grid">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h3>Телефон</h3>
+                <p><a href="tel:+79882256104">+7 988 225-61-04</a></p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h3>Адрес</h3>
+                <p>Республика Дагестан, Сулейман-Стальский район,<br>село Орта-Стал, Парковая ул., 38</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h3>Email</h3>
+                <p><a href="mailto:kyurinskaya.zhemchuzhina@mail.ru">kyurinskaya.zhemchuzhina@mail.ru</a></p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <i class="fas fa-clock"></i>
+              <div>
+                <h3>Режим работы</h3>
+                <p>Пн-Пт: 9:00 - 18:00<br>Сб: 10:00 - 16:00<br>Вс: выходной</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="map-container">
+            <iframe
+              src="https://yandex.ru/map-widget/v1/?ll=48.173801%2C41.690282&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgo1NzM1OTczMjE3EqAB0KDQvtGB0YHQuNGPLCDQoNC10YHQv9GD0LHQu9C40LrQsCDQlNCw0LPQtdGB0YLQsNC9LCDCq9Ck0LjQu9GM0LHRg9C60L7QstCw0L3QuNGPINCX0LXQu9C10L3RjNC60L7Qs9C+INGB0L7RhdGA0L7QutC4INCT0YDQtdC30LTRg9C10YLRjNGB0LrQuNC5INGA0LDQudC+0L0sINCT0YDQtdC30LTRg9C10YIg0J_QvtC00L3QvtC80LDQudGC0LAsIDM4Ig3QpLdCFY7CJkI%2C%2C&z=16.81"
+              width="100%"
+              height="100%"
+              frameborder="0"
+              allowfullscreen="true"
+            ></iframe>
+          </div>
+        </div>
+        
+        <div class="directions-info">
+          <h3>Как проехать</h3>
+          <p>Мы находимся в селе Орта-Стал Сулейман-Стальского района Республики Дагестан. Для построения маршрута воспользуйтесь картой выше или перейдите по ссылке: <a href="https://yandex.ru/maps/-/CHTbqWI6" target="_blank">https://yandex.ru/maps/-/CHTbqWI6</a></p>
+        </div>
+      </div>
+    </section>
+
+      </div>
+
+  </body>
 </html>
